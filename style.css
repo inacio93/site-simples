@@ -1,36 +1,89 @@
 /* GERAL */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-html{
-    height: 500vh;
+html {
+    height: 150vh;
+    background-color: #000;
 }
 
 /* HEADER */
-.container{
+.container {
     max-width: 1280px;
     margin: auto;
 }
 
-.flex{
+.flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header{
+header {
     width: 100%;
     padding: 40px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: background-color .5s ease;
 }
 
-header ul{
+header a {
+    color: #ECA634;
+}
+
+header ul {
     list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a {
     text-decoration: none;
+    color: #000;
 }
 
 
+header ul li a:hover {
+    color: #ECA634;
+    transition: .2s;
+    text-shadow: 0 0 8px #ECA634;
+}
 
+.banner {
+    height: 100vh;
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 60px;
+    font: 4em;
+}
+
+h1 span {
+    color: #ECA634;
+}
+
+.btn-contato button {
+    width: 120px;
+    height: 40px;
+    background-color: #ECA634;
+    color: #000;
+    cursor: pointer;
+    transition: 0.2;
+    border: none;
+}
